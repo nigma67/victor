@@ -1,103 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
 </head>
+
 <body>
+
   <div class="card">
-  <img src="https://via.placeholder.com/150" alt="Producto">
-  <h3>Reloj Inteligente</h3>
-  <p class="price">$15.000</p>
-  <button>Añadir al carrito</button>
-</div>
+    <img src="https://via.placeholder.com/150" alt="Producto">
+    <h3>Reloj Inteligente</h3>
+    <p class="price">$15.000</p>
+    <button>Añadir al carrito</button>
+  </div>
 
-<style>
-  .card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: sans-serif;
-  }
-  button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-</style>
-
-<p>Clicks: <span id="contador">0</span></p>
-<button id="btn">Incrementar</button>
-
-<script>
-  const display = document.getElementById('contador');
-  const boton = document.getElementById('btn');
-  let cuenta = 0;
-
-  boton.addEventListener('click', () => {
-    cuenta++;
-    display.textContent = cuenta;
-  });
-</script>
-
-<button id="toggleTheme">Cambiar Modo</button>
-
-<style>
-  body { transition: 0.3s; }
-  .dark-mode { background-color: #222; color: #fff; }
-</style>
-
-<script>
-  const btnTheme = document.getElementById('toggleTheme');
-  btnTheme.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-  });
-</script>
-
-<input type="text" id="nombre" placeholder="Tu nombre">
-<button id="validar">Enviar</button>
-<p id="error" style="color: red;"></p>
-
-<script>
-  const inputNom = document.getElementById('nombre');
-  const btnVal = document.getElementById('validar');
-  const txtError = document.getElementById('error');
-
-  btnVal.addEventListener('click', () => {
-    if (inputNom.value.trim() === "") {
-      txtError.textContent = "Por favor, escribe un nombre.";
-    } else {
-      txtError.textContent = "";
-      alert("¡Formulario enviado!");
+  <style>
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: sans-serif;
     }
-  });
-</script>
-
-<input type="text" id="tareaInput" placeholder="Nueva tarea">
-<button id="addBtn">Agregar</button>
-<ul id="lista"></ul>
-
-<script>
-  const input = document.getElementById('tareaInput');
-  const lista = document.getElementById('lista');
-  const btnAdd = document.getElementById('addBtn');
-
-  btnAdd.addEventListener('click', () => {
-    if (input.value !== "") {
-      const nuevaTarea = document.createElement('li');
-      nuevaTarea.textContent = input.value;
-      lista.appendChild(nuevaTarea);
-      input.value = ""; // Limpiar input
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 4px;
     }
-  });
-</script>
+  </style>
+
+  <!-- 2 -->
+  <p>Clicks: <span id="contador">0</span></p>
+  <button id="btn">Incrementar</button>
+
+  <script>
+    const display = document.getElementById('contador');
+    const boton = document.getElementById('btn');
+    let cuenta = 0;
+
+    boton.addEventListener('click', () => {
+      cuenta++;
+      display.textContent = cuenta;
+    });
+  </script>
+
+  <!-- 3 -->
+  <button id="toggleTheme">Cambiar Modo</button>
+
+  <style>
+    body { transition: 0.3s; }
+    .dark-mode { background-color: #222; color: #fff; }
+  </style>
+
+  <script>
+    const btnTheme = document.getElementById('toggleTheme');
+    btnTheme.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+  <!-- 4 -->
+  <input type="text" id="nombre" placeholder="Tu nombre">
+  <button id="validar">Enviar</button>
+  <p id="error" style="color: red;"></p>
+
+  <script>
+    const inputNom = document.getElementById('nombre');
+    const btnVal = document.getElementById('validar');
+    const txtError = document.getElementById('error');
+
+    btnVal.addEventListener('click', () => {
+      if (inputNom.value.trim() === "") {
+        txtError.textContent = "Por favor, escribe un nombre.";
+      } else {
+        txtError.textContent = "";
+        alert("¡Formulario enviado!");
+      }
+    });
+  </script>
+
+  <!-- 5 -->
+  <input type="text" id="tareaInput" placeholder="Nueva tarea">
+  <button id="addBtn">Agregar</button>
+  <ul id="lista"></ul>
+
+  <script>
+    const input = document.getElementById('tareaInput');
+    const lista = document.getElementById('lista');
+    const btnAdd = document.getElementById('addBtn');
+
+    btnAdd.addEventListener('click', () => {
+      if (input.value !== "") {
+        const nuevaTarea = document.createElement('li');
+        nuevaTarea.textContent = input.value;
+        lista.appendChild(nuevaTarea);
+        input.value = "";
+      }
+    });
+  </script>
+
+  
+  <h3> Ejercicio de meses</h3>
+  <button onclick="meses()">Mostrar meses</button>
+
+  <h3>Cuenta matemáticas</h3>
+  <button onclick="mates()">Mostrar cuentas</button>
+
+  <h3>Comparativos</h3>
+  <button onclick="comp()">Mostrar comparaciones</button>
+
+  <h3>DNI</h3>
+  <button onclick="dni()">Mostrar DNI</button>
+
+  <h3>Número Factorial</h3>
+  <button onclick="facto()">Mostrar cuenta</button>
+
+  <h3>Par o impar</h3>
+  <button onclick="eje6()">Mostrar resultado</button>
+
+  <h3>Mayúsculas o Minúsculas (O ambas)</h3>
+  <button onclick="exotic()">Mostrar si hay más mayus o minus o mezcla</button>
+
+  <h3>Palíndromo</h3>
+  <button onclick="palíndromo()">Mostrar si es palíndromo</button>
+
+  <h3>Dados</h3>
+  <button onclick="dado()">Mostrar dados</button>
+
+
+  <script src="index.js"></script>
+
 </body>
 </html>
