@@ -1,4 +1,4 @@
-function meses(){
+function eje1(){
 
     const losmeses = [
         "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
@@ -7,7 +7,7 @@ function meses(){
     console.log(losmeses);
 }
 
-function mates(){
+function eje2(){
 
     var valores = [
         true, 5, false, "hola", "adiós", 2
@@ -34,7 +34,7 @@ function mates(){
 
 }
 
-function comp(){
+function eje3(){
 
     var numero1 = 5;
     var numero2 = 8;
@@ -57,7 +57,7 @@ function comp(){
 
 }
 
-function dni(){
+function eje4(){
 
 var letras = ['T', 'R', 'W', 'A', 'G', 'M',
 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z',
@@ -66,7 +66,7 @@ var letras = ['T', 'R', 'W', 'A', 'G', 'M',
 var numero = prompt("Ingrese su DNI:");
 
 if(isNaN(numero) || numero==null || numero=="" || numero < 0 || numero > 99999999){
-    console.log("Valor inválido papanatas");
+    console.log("Valor inválido");
 }
 
 else{
@@ -78,7 +78,7 @@ console.log("Letra: ", letras[resultadoD]);
 }
 }
 
-function facto(){
+function eje5(){
 
 var numero = prompt("Ingrese un número: ");
 let cuenta = 1;
@@ -96,7 +96,7 @@ function eje6(params) {
     parpar(numero);
 }
 
-function parpar(numero){
+function eje7(numero){
 if (numero % 2 === 0) {
     console.log("Su número es: Par");
 }
@@ -106,13 +106,13 @@ else{
 
 }
 
-function exotic(){
+function eje8(){
 
 var algo = prompt("Ingrese algo (menos un número): ");
 
 if(!isNaN(algo) || algo == null || algo == " " ){
 
-    console.log("carente de juicio");
+    console.log("Valor Invlálido");
 
 }else{
     if(algo === algo.toUpperCase()){
@@ -126,7 +126,7 @@ if(!isNaN(algo) || algo == null || algo == " " ){
 
 }
 
-function palíndromo(){
+function eje10(){
 
     let texto = prompt("Ingresa un texto: ");
     let str = texto.replaceAll(" ", " ").toLocaleLowerCase();
@@ -141,7 +141,7 @@ function palíndromo(){
 
 }
 
-function dado(params){
+function eje10(params){
     let arr = [0,0,0,0,0,0,0,0,0,0,0,0,0];
 
     for(var i = 0; i <= 3600; i++){
@@ -157,7 +157,7 @@ function dado(params){
 }
 
 // ejercicio 9
-EJERCICIO09(params){
+function eje9(params){
     let p1 = new Estudiante("Juan", 30, "masculino", "Matemáticas", "1A");
     console.log(p1.registrar());
     p1.obtDetalles();
