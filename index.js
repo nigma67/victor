@@ -1,10 +1,10 @@
 function eje1(){
 
-    const losmeses = [
+    const meses = [
         "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
         "Septiembre", "Octubre", "Noviembre", "Diciembre"
     ];
-    console.log(losmeses);
+    console.log(meses);
 }
 
 function eje2(){
