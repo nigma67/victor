@@ -92,21 +92,17 @@ console.log("Resultado: ", cuenta);
 }
 
 function eje6(params) {
-    let numero = prompt("");
-    parpar(numero);
-}
-
-function eje7(numero){
-if (numero % 2 === 0) {
+    let numero = prompt("Ingresar número");
+    
+    if (numero % 2 === 0) {
     console.log("Su número es: Par");
 }
 else{
     console.log("Su número es: Impar");
 }
-
 }
 
-function eje8(){
+function eje7(){
 
 var algo = prompt("Ingrese algo (menos un número): ");
 
@@ -120,13 +116,13 @@ if(!isNaN(algo) || algo == null || algo == " " ){
     }else if(algo === algo.toLowerCase()){
         document.writeln("Está escrito con minúsculas");
     }else {
-        document.writeln("Es una mescolanza")
+        document.writeln("Es una mezcla")
     }
 }
 
 }
 
-function eje10(){
+function eje8(){
 
     let texto = prompt("Ingresa un texto: ");
     let str = texto.replaceAll(" ", " ").toLocaleLowerCase();
