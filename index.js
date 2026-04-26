@@ -52,11 +52,11 @@ function eje3(){
     console.log("numero2 es positivo");
     }
 
-    if(numero1 < 0 || numero1 != 0) {
+    if(numero1 < 0 || numero1 !== 0) {
     console.log("numero1 es negativo o distinto de cero");
     }
 
-    if((numero1 + 1) < numero2 || (numero1 + 1) !== numero2) {
+    if((numero1 + 1) < numero2) {
     console.log("Incrementar en 1 unidad el valor de numero1 no lo hace mayor o igual que numero2");
     }
 
