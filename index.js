@@ -13,11 +13,11 @@ function eje2(){
         true, 5, false, "hola", "adiós", 2
     ];
 
-    var suma = (valores[1]+valores[5]);
-    var resta = (valores[1]-valores[5]);
-    var multiplicacion = (valores[1]*valores[5]);
-    var división = (valores[1]/valores[5]);
-    var potencia = (valores[1]**valores[5]);
+    var suma = (valores[1] + valores[5]);
+    var resta = (valores[1] - valores[5]);
+    var multiplicacion = (valores[1] * valores[5]);
+    var división = (valores[1] / valores[5]);
+    var potencia = (valores[1] ** valores[5]);
 
     console.log("Suma: ", suma);
     console.log("Resta: ", resta);
@@ -25,12 +25,17 @@ function eje2(){
     console.log("División: ", división);
     console.log("Potencia: ", potencia);
 
-    if(valores[3].length > valores[4].length){
-        console.log("La afirmación es: ", valores[2]);
+    if(valores[3] > valores[4]){
+        console.log("El mayor es: ", valores[3]);
     }
-    else if(valores[3].length < valores[4].length){
-        console.log("La afirmación es: ", valores[0]);
+    else if(valores[3] < valores[4]){
+        console.log("El mayor es: ", valores[4]);
     }
+    var resultadoTrue = valores[0] || valores[2];
+    var resultadoFalse = valores[0] && valores[2];
+
+    console.log("Afirmación (true): ", resultadoTrue);
+    console.log("Afirmación (false): ", resultadoFalse);
 
 }
 
