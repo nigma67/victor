@@ -160,8 +160,12 @@ function eje10(params){
 // ejercicio 9
 function eje9(params){
     let p1 = new Estudiante("Juan", 30, "masculino", "Matemáticas", "1A");
-    console.log(p1.registrar());
+    p1.registrar();
     p1.obtDetalles();
+    
+    let p2 = new Profesor("Ana", 45, "femenino", "Historia", "Secundario");
+    p2.asignar();
+    p2.obtDetalles();
 }
 
 
