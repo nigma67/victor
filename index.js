@@ -142,7 +142,7 @@ function eje8(){
 
 }
 
-function eje10(params){
+function eje10(p){
     let arr = [0,0,0,0,0,0,0,0,0,0,0,0,0];
 
     for(var i = 0; i <= 36000; i++){
@@ -158,7 +158,7 @@ function eje10(params){
 }
 
 // ejercicio 9
-function eje9(params){
+function eje9(){
     let p1 = new Estudiante("Juan", 30, "masculino", "Matemáticas", "1A");
     p1.registrar();
     p1.obtDetalles();
