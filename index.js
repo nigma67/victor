@@ -75,10 +75,10 @@ if(isNaN(numero) || numero==null || numero=="" || numero < 0 || numero > 9999999
 }
 
 else{
-    var resultadoD = numero % 23;
+    var resultado = numero % 23;
 
-console.log("Resto: ", resultadoD);
-console.log("Letra: ", letras[resultadoD]);
+console.log("Resto: ", resultado);
+console.log("Letra: ", letras[resultado]);
 
 }
 }
