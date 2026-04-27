@@ -130,7 +130,7 @@ if(!isNaN(algo) || algo == null || algo == " " ){
 function eje8(){
 
     let texto = prompt("Ingresa un texto: ");
-    let str = texto.replaceAll(" ", " ").toLowerCase();
+    let str = texto.replaceAll(" ", "").toLowerCase();
     let arrStr = str.split("").reverse().join("");
 
     if (str == arrStr){
