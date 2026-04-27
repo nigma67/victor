@@ -145,7 +145,7 @@ function eje8(){
 function eje10(params){
     let arr = [0,0,0,0,0,0,0,0,0,0,0,0,0];
 
-    for(var i = 0; i <= 3600; i++){
+    for(var i = 0; i <= 36000; i++){
         let dado1 = Math.floor(Math.random() * 6) + 1;
         let dado2 = Math.floor(Math.random() * 6) + 1;
         let Sumita = dado1 + dado2;
