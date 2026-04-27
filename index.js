@@ -96,7 +96,7 @@ console.log("Resultado: ", cuenta);
 
 }
 
-function eje6(params) {
+function eje6(numero) {
     let numero = prompt("Ingresar número");
     
     if (numero % 2 === 0) {
